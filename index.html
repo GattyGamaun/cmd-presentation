@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/moon.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section>
+      <h3>Command Prompt</h3>
+      <img src="./lib/img/1.jpg">
+      <aside class="notes">
+        On the screen you can see how command prompt looks like. To open cmd navigate to search line, type cmd and press
+        enter. If you make right click on the main bar, you see some properties which you can change, like font, font
+        size
+        color, etc.
+      </aside>
+    </section>
+    <section>
+      <h3>1. Listing files in the directory</h3>
+      <p>dir</p>
+      <img src="./lib/img/dir.jpg">
+      <aside class="notes">
+        The first command you should to know is dir. Dir shows subdirectories and the quantity of the folders
+        at the bottom.
+      </aside>
+    </section>
+    <section>
+      <h3>2. Change a drive</h3>
+      <img src="./lib/img/drive.jpg">
+      <aside class="notes">
+        Simple command to change drive. Type label of the drive and than type colon. Drive is changed.
+      </aside>
+    </section>
+    <section>
+      <h3>3. Moving into a directory</h3>
+      <p>cd {path}\{directory name}</p>
+      <img src="./lib/img/cd.jpg">
+      <aside class="notes">
+        The third command is cd. It helps navigate throw directories. If you type cd dot dot, you move up
+        on the one level. One dot means the same level of the tree structure. To navigate to subfolder, type cd and
+        the folder name. If you don't remember exactly name of the folder, type dir to see subdirectories.
+        Also you can specify the path to specific folder. Path can be absolute or relative.
+      </aside>
+    </section>
+    <section>
+      <h3>4.1. Make a directory</h3>
+      <p>mkdir {directory name}</p>
+      <img src="./lib/img/mkdir.jpg">
+      <aside class="notes">
+        In the CMD to make a folder is pretty simple. Type mkdir with the folder name.
+      </aside>
+    </section>
+    <section>
+      <h3>4.2. Make subdirectories</h3>
+      <p>mkdir {path}\{directory name}</p>
+      <img src="./lib/img/mkdir-path.jpg">
+      <img src="./lib/img/path.jpg">
+      <aside class="notes">
+        If you want to make inserted folders specify the path.
+      </aside>
+    </section>
+    <section>
+      <h3>5. Rename a directory </h3>
+      <p>ren {old name} {new name}</p>
+      <img src="./lib/img/rename-folder.jpg">
+      <aside class="notes">
+        Ren allows to rename the name of the folder. You have to specify which folder you are going to rename then write
+        the new name.
+      </aside>
+    </section>
+    <section>
+      <h3>6. Remove a directory</h3>
+      <p>rd {directory name}</p>
+      <img src="./lib/img/remove-dir.jpg">
+      <aside class="notes">
+        To remove the folder type rd, what means remove directory, and type the name.
+      </aside>
+    </section>
+    <section>
+      <h3>7. Copy a file</h3>
+      <p>copy {source} {destination}</p>
+      <img src="./lib/img/copy.jpg">
+      <aside class="notes">
+        To copy a file you have to specify the path from place where file is located and then the path to new place.
+        Uncomfortable, isn't it?
+      </aside>
+    </section>
+    <section>
+      <h3>8. Create a file</h3>
+      <p>copy con {file name}</p>
+      <img src="./lib/img/create.jpg">
+      <aside class="notes">
+        Copy also suitable for creating files. Type copy con with new file name and press enter. If you are going to
+        make text file you can type words which will be inserted into the file, or leave it blank. Press ctrl+z, then
+        enter. You'll see the message that file is copied that means the file was created.
+      </aside>
+    </section>
+    <section>
+      <h3>9. Copy folders</h3>
+      <p>xcopy /s {source} {destination}</p>
+      <img src="./lib/img/xcopy.jpg">
+      <aside class="notes">
+        Copy folders is awful operation. Type xcopy, slash, s, then specify source folder and destination path. Notice
+        that only subfolders will be copied. /s means subdirectories will be included.
+      </aside>
+    </section>
+    <section>
+      <h3>10.1. Delete all files in the folder</h3>
+      <p>del {folder which consists files}</p>
+      <img src="./lib/img/del.jpg">
+      <aside class="notes">
+        Del helps to delete all files which placed in the folder. This command can not delete a folder.
+      </aside>
+    </section>
+    <section>
+      <h3>10.2. Delete a file</h3>
+      <p>del {file name}</p>
+      <img src="./lib/img/del-file.jpg">
+      <aside class="notes">
+        If you want to delete certain file just type the file name with del command. If you are not in the current
+        folder specify the path to file.
+      </aside>
+    </section>
+    <section>
+      <h3>11. Lunch an application</h3>
+      <p>Just type the name of the application with {file name}</p>
+      <img src="./lib/img/open.jpg">
+      <img src="./lib/img/lunch.jpg">
+      <aside class="notes">
+        Sometimes, while you are searching files you need to open it. Type name of the app which can open this file and
+        the file name. If app can open folders type app name and the dot that means open all included files.
+      </aside>
+    </section>
+    <section>
+      <h3>12. All commands are available in the help</h3>
+      <img src="./lib/img/help.jpg">
+      <aside class="notes">
+        If you forget a command or want to explore new commands just type help to view all possible commands.
+      </aside>
+    </section>
+    <section>
+      <h3>Thank you!</h3>
+      <img src="./lib/img/star-wars.gif">
+      <aside class="notes">
+        Thanks for the listening. Do you have the questions?
+      </aside>
+    </section>
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+  // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    dependencies: [
+      {src: 'plugin/markdown/marked.js'},
+      {src: 'plugin/markdown/markdown.js'},
+      {src: 'plugin/notes/notes.js', async: true},
+      {
+        src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      }
+    ]
+  });
+</script>
+</body>
+</html>
