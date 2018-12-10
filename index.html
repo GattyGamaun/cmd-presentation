@@ -25,35 +25,51 @@
 <div class="reveal">
   <div class="slides">
     <section>
-      <h3>Command Prompt</h3>
-      <img src="./lib/img/1.jpg">
+      <h3>UNIX shell</h3>
+      <img src="./lib/img/1-1.jpg">
       <aside class="notes">
-        On the screen you can see how command prompt looks like. To open cmd navigate to search line, type cmd and press
+        On the screen you can see how shell looks like. To open cmd navigate to search line, type cmd and press
         enter. If you make right click on the main bar, you see some properties which you can change, like font, font
         size
         color, etc.
       </aside>
     </section>
     <section>
-      <h3>1. Listing files in the directory</h3>
-      <p>dir</p>
-      <img src="./lib/img/dir.jpg">
+      <h3>1.1 Listing files in the directory</h3>
+      <p>ls</p>
+      <img src="./lib/img/ls.jpg">
       <aside class="notes">
-        The first command you should to know is dir. Dir shows subdirectories and the quantity of the folders
-        at the bottom.
+        The first command you should to know is ls. lists all files and directories in the working directory.
       </aside>
     </section>
     <section>
-      <h3>2. Change a drive</h3>
-      <img src="./lib/img/drive.jpg">
+      <h3>1.2 Listing files in the directory</h3>
+      <p>ls -a</p>
+      <img src="./lib/img/ls-a.jpg">
       <aside class="notes">
-        Simple command to change drive. Type label of the drive and than type colon. Drive is changed.
+        lists all contents of a directory, including hidden files and directories
       </aside>
     </section>
     <section>
-      <h3>3. Moving into a directory</h3>
-      <p>cd {path}\{directory name}</p>
-      <img src="./lib/img/cd.jpg">
+      <h3>1.3 Listing files in the directory</h3>
+      <p>ls -alt</p>
+      <img src="./lib/img/ls-alt.jpg">
+      <aside class="notes">
+        Multiple options can be used together, like ls -alt
+      </aside>
+    </section>
+    <section>
+      <h3>2 Show current directory</h3>
+      <p>pwd</p>
+      <img src="./lib/img/pwd.jpg">
+      <aside class="notes">
+        pwd outputs the name of the current working directory
+      </aside>
+    </section>
+    <section>
+      <h3>3.1 Moving into a directory</h3>
+      <p>cd {path}/{directory name}</p>
+      <img src="./lib/img/cd-2.jpg">
       <aside class="notes">
         The third command is cd. It helps navigate throw directories. If you type cd dot dot, you move up
         on the one level. One dot means the same level of the tree structure. To navigate to subfolder, type cd and
@@ -62,88 +78,90 @@
       </aside>
     </section>
     <section>
-      <h3>4.1. Make a directory</h3>
+      <h3>3.2 Moving into home directory</h3>
+      <p>cd [Enter]</p>
+      <img src="./lib/img/cd-2.jpg">
+      <aside class="notes">
+        If you type cd and press the Return key—with no directory specified—you’ll go back to your Home folder.
+        (You can also type cd ~ to go there.)
+      </aside>
+    </section>
+    <section>
+      <h3>4 Make a directory</h3>
       <p>mkdir {directory name}</p>
-      <img src="./lib/img/mkdir.jpg">
+      <img src="./lib/img/dir-2.jpg">
       <aside class="notes">
-        In the CMD to make a folder is pretty simple. Type mkdir with the folder name.
+        In the shell to make a folder is pretty simple. Type mkdir with the folder name.
       </aside>
     </section>
     <section>
-      <h3>4.2. Make subdirectories</h3>
-      <p>mkdir {path}\{directory name}</p>
-      <img src="./lib/img/mkdir-path.jpg">
-      <img src="./lib/img/path.jpg">
+      <h3>5 Make a file </h3>
+      <p>touch {file name}</p>
+      <img src="./lib/img/create-2.jpg">
       <aside class="notes">
-        If you want to make inserted folders specify the path.
+        To make a file use touch command
       </aside>
     </section>
     <section>
-      <h3>5. Rename a directory </h3>
-      <p>ren {old name} {new name}</p>
-      <img src="./lib/img/rename-folder.jpg">
+      <h3>6.1 Remove a file</h3>
+      <p>rm {file name}</p>
+      <img src="./lib/img/rm-file.jpg">
       <aside class="notes">
-        Ren allows to rename the name of the folder. You have to specify which folder you are going to rename then write
-        the new name.
+        To remove the file type rm, what means remove file, and type the name.
       </aside>
     </section>
     <section>
-      <h3>6. Remove a directory</h3>
-      <p>rd {directory name}</p>
-      <img src="./lib/img/remove-dir.jpg">
+      <h3>6.2 Remove a directory</h3>
+      <p>rm -r {directory name}</p>
+      <img src="./lib/img/remove-dir-2.jpg">
       <aside class="notes">
-        To remove the folder type rd, what means remove directory, and type the name.
+        To remove the folder type rm -r, what means remove directory, and type the name.
       </aside>
     </section>
     <section>
-      <h3>7. Copy a file</h3>
-      <p>copy {source} {destination}</p>
-      <img src="./lib/img/copy.jpg">
+      <h3>6.3 Delete directories with subdirectories</h3>
+      <p>rm -r {folder}</p>
+      <img src="./lib/img/rem-all.jpg">
+      <aside class="notes">
+        rm -r helps to delete all subfolders which placed in the folder.
+      </aside>
+    </section>
+    <section>
+      <h3>7 Copy a file</h3>
+      <p>copy {source/file} {destination}</p>
+      <img src="./lib/img/copy-2.jpg">
       <aside class="notes">
         To copy a file you have to specify the path from place where file is located and then the path to new place.
-        Uncomfortable, isn't it?
       </aside>
     </section>
     <section>
-      <h3>8. Create a file</h3>
-      <p>copy con {file name}</p>
-      <img src="./lib/img/create.jpg">
+      <h3>8.1 Move a file</h3>
+      <p>mv {source}{file name} {destination}</p>
+      <img src="./lib/img/move.jpg">
       <aside class="notes">
-        Copy also suitable for creating files. Type copy con with new file name and press enter. If you are going to
-        make text file you can type words which will be inserted into the file, or leave it blank. Press ctrl+z, then
-        enter. You'll see the message that file is copied that means the file was created.
+        If you want to move certain file type mv with source of the file name with name, then specify new location.
       </aside>
     </section>
     <section>
-      <h3>9. Copy folders</h3>
-      <p>xcopy /s {source} {destination}</p>
-      <img src="./lib/img/xcopy.jpg">
+      <h3>8.2 Rename a file</h3>
+      <p>mv {old file name} {new file name}</p>
+      <img src="./lib/img/rename-file.jpg">
       <aside class="notes">
-        Copy folders is awful operation. Type xcopy, slash, s, then specify source folder and destination path. Notice
-        that only subfolders will be copied. /s means subdirectories will be included.
+        To rename file type mv, old name and then new name of the file.
       </aside>
     </section>
     <section>
-      <h3>10.1. Delete all files in the folder</h3>
-      <p>del {folder which consists files}</p>
-      <img src="./lib/img/del.jpg">
+      <h3>9 Clear display </h3>
+      <p>clear</p>
+      <img src="./lib/img/clear.jpg">
       <aside class="notes">
-        Del helps to delete all files which placed in the folder. This command can not delete a folder.
+        Clear clears window
       </aside>
     </section>
     <section>
-      <h3>10.2. Delete a file</h3>
-      <p>del {file name}</p>
-      <img src="./lib/img/del-file.jpg">
-      <aside class="notes">
-        If you want to delete certain file just type the file name with del command. If you are not in the current
-        folder specify the path to file.
-      </aside>
-    </section>
-    <section>
-      <h3>11. Lunch an application</h3>
+      <h3>10 Lunch an application</h3>
       <p>Just type the name of the application with {file name}</p>
-      <img src="./lib/img/open.jpg">
+      <img src="./lib/img/open-2.jpg">
       <img src="./lib/img/lunch.jpg">
       <aside class="notes">
         Sometimes, while you are searching files you need to open it. Type name of the app which can open this file and
@@ -151,8 +169,25 @@
       </aside>
     </section>
     <section>
-      <h3>12. All commands are available in the help</h3>
-      <img src="./lib/img/help.jpg">
+      <h3>11 Edit file</h3>
+      <p>nano {file name}</p>
+      <img src="./lib/img/nano.jpg">
+      <img src="./lib/img/nano-2.jpg">
+      <aside class="notes">
+       nano opens editor like vim editor
+      </aside>
+    </section>
+    <section>
+      <h3>12 How to know about installed processor</h3>
+      <p>winsat cpu -v</p>
+      <img src="./lib/img/cpu.jpg">
+      <aside class="notes">
+        This command help to know which processor you computer has. It works for Windows.
+      </aside>
+    </section>
+    <section>
+      <h3>12 A part of commands are available in the help</h3>
+      <img src="./lib/img/help-2.jpg">
       <aside class="notes">
         If you forget a command or want to explore new commands just type help to view all possible commands.
       </aside>
